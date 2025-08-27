@@ -8,3 +8,5 @@ I scroll on Instagram non-stop.....
 
 ### Education
 Instagram Reels & Stack Overflow
+
+<img src="https://avatars.githubusercontent.com/u/42220067?v=4">
