@@ -1,4 +1,3 @@
-Hello
 
 student and minecraft enthusiast 
 <hr>
