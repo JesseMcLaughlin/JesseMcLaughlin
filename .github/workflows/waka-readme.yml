@@ -1,0 +1,21 @@
+name: Waka Readme
+
+on:
+  workflow_dispatch: # Allows you to manually trigger the workflow
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: "0 0 * * *"
+
+jobs:
+  update-readme:
+    name: Update README with WakaTime Stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: athul/waka-readme@master #
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # Optional: if your WakaTime and GitHub usernames are different
+          # WAKATIME_USER: <Your WakaTime username>
+          # Optional: if not using a profile repo, a GH_TOKEN secret is required
+          # GH_TOKEN: ${{ secrets.GH_TOKEN }}
